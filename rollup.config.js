@@ -10,7 +10,6 @@ import pkg from './package.json';
  */
 const banner = `/*!
  * ${pkg.name} v${pkg.version}
- * (c) ${pkg.author.name}
  * Released under the ${pkg.license} License.
  */
 `;

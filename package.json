@@ -49,7 +49,7 @@
   "author": {
     "name": "MOLGENIS"
   },
-  "license": "MIT",
+  "license": "LGPLv3",
   "bugs": {
     "url": "https://github.com/fdlk/molgenis/molgenis-js-magma/issues"
   },
