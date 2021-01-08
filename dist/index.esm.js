@@ -1,6 +1,6 @@
 /*!
- * [libraryName] v0.0.0
- * (c) [authorFullName]
+ * @molgenis/magma-script v0.0.0
+ * (c) MOLGENIS
  * Released under the MIT License.
  */
 

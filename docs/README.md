@@ -1,8 +1,8 @@
-**[[libraryNameWithSpacesAndUpperCases]](README.md)**
+**[MOLGENIS Magma](README.md)**
 
 > Globals
 
-# [libraryNameWithSpacesAndUpperCases]
+# MOLGENIS Magma
 
 ## Index
 

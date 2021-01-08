@@ -1,5 +1,5 @@
 {
-  "name": "[libraryName]",
+  "name": "@molgenis/magma-script",
   "version": "0.0.0",
   "description": "",
   "cdn": "dist/index.umd.js",
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[repositoryOwner]/[repositoryName].git"
+    "url": "git+https://github.com/fdlk/molgenis/molgenis-js-magma.git"
   },
   "keywords": [
     "typescript",
@@ -47,11 +47,11 @@
     "library"
   ],
   "author": {
-    "name": "[authorFullName]"
+    "name": "MOLGENIS"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/[repositoryOwner]/[repositoryName]/issues"
+    "url": "https://github.com/fdlk/molgenis/molgenis-js-magma/issues"
   },
-  "homepage": "https://github.com/[repositoryOwner]/[repositoryName]#readme"
+  "homepage": "https://github.com/fdlk/molgenis/molgenis-js-magma#readme"
 }
