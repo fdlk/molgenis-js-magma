@@ -6,46 +6,76 @@
 
 ## Index
 
+### Classes
+
+* [ScriptableValue](classes/scriptablevalue.md)
+
 ### Type aliases
 
-* [NumberParseable](README.md#numberparseable)
+* [Entity](README.md#entity)
+* [IDValueType](README.md#idvaluetype)
+* [Value](README.md#value)
 
 ### Functions
 
-* [isNumberParseable](README.md#isnumberparseable)
+* [$](README.md#$)
+* [\_isNull](README.md#_isnull)
+* [newValue](README.md#newvalue)
 
 ## Type aliases
 
-### NumberParseable
+### Entity
 
-Ƭ  **NumberParseable**: number \| string \| boolean & { isNumberParseble: unique symbol  }
+Ƭ  **Entity**: { _idValue: number \| string  }
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L4)*
+*Defined in [ScriptableValue.ts:1](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/ScriptableValue.ts#L1)*
 
-A Branded Type for values parseable to number.
+#### Type declaration:
+
+Name | Type |
+------ | ------ |
+`\_idValue` | number \| string |
+
+___
+
+### IDValueType
+
+Ƭ  **IDValueType**: number \| string \| Date
+
+*Defined in [ScriptableValue.ts:2](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/ScriptableValue.ts#L2)*
+
+___
+
+### Value
+
+Ƭ  **Value**: [IDValueType](README.md#idvaluetype) \| boolean \| [Entity](README.md#entity) \| [Value](README.md#value)[]
+
+*Defined in [ScriptableValue.ts:3](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/ScriptableValue.ts#L3)*
 
 ## Functions
 
-### isNumberParseable
+### $
 
-▸ `Const`**isNumberParseable**(`value`: unknown): value is NumberParseable
+▸ **$**(`this`: { [key:string]: [Value](README.md#value);  }, `attrName`: string): [ScriptableValue](classes/scriptablevalue.md)
 
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L23)*
+*Defined in [index.ts:3](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/index.ts#L3)*
 
-Check if value is parseable to number.
+#### Parameters:
 
-**`example`** ```ts
-isNumberParseable('AAAA');
-//=> false
+Name | Type |
+------ | ------ |
+`this` | { [key:string]: [Value](README.md#value);  } |
+`attrName` | string |
 
-isNumberParseable('100');
-//=> true
+**Returns:** [ScriptableValue](classes/scriptablevalue.md)
 
-if (!isNumberParseable(value))
-  throw new Error('Value can\'t be parseable to `Number`.')
-return Number(value);
-```
-@param value - An `unknown` value to be checked.
+___
+
+### \_isNull
+
+▸ **_isNull**(`value`: unknown): boolean
+
+*Defined in [ScriptableValue.ts:5](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/ScriptableValue.ts#L5)*
 
 #### Parameters:
 
@@ -53,4 +83,20 @@ Name | Type |
 ------ | ------ |
 `value` | unknown |
 
-**Returns:** value is NumberParseable
+**Returns:** boolean
+
+___
+
+### newValue
+
+▸ **newValue**(`value`: [Value](README.md#value)): [ScriptableValue](classes/scriptablevalue.md)
+
+*Defined in [index.ts:13](https://github.com/fdlk/molgenis-js-magma/blob/e3e3a86/src/index.ts#L13)*
+
+#### Parameters:
+
+Name | Type |
+------ | ------ |
+`value` | [Value](README.md#value) |
+
+**Returns:** [ScriptableValue](classes/scriptablevalue.md)
